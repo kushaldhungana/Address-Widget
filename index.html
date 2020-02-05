@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Address Widget</title>
+  </head>
+  <body>
+    <template id='lol'>
+        <form id="add">
+
+          <label for="zip">Zip</label>
+          <input id="zip" type="text" name="zip">
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" >
+
+          <label for="street">Street</label>
+          <input type="text" name="street" id="street"><br>
+
+          <label for="housenumber">Housenumber</label>
+          <input type="text" name="housenumber" id="housenumber">
+
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country" value="Deutchland" readonly><br>
+
+          <input type="button" onclick="display();" value="info">
+
+        </form>
+    </template>
+    <address-field>
+    </address-field>
+  <script src="index.js" defer>
+  </script>
+  </body>
+</html>
