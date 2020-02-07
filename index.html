@@ -9,25 +9,27 @@
         <form id="add">
 
           <label for="zip">Zip</label>
-          <input id="zip" type="text" name="zip">
+          <input class="zip" id="zip" type="text" name="Zip">
 
           <label for="city">City</label>
-          <input type="text" id="city" name="city" >
+          <input class="city" type="text" id="city" name="City" >
 
           <label for="street">Street</label>
-          <input type="text" name="street" id="street"><br>
+          <input type="text" name="Street" id="street"><br>
 
           <label for="housenumber">Housenumber</label>
-          <input type="text" name="housenumber" id="housenumber">
+          <input type="text" name="Housenumber" id="housenumber">
 
           <label for="country">Country</label>
-          <input type="text" name="country" id="country" value="Deutchland" readonly><br>
+          <input type="text" name="Country" id="country" value="Deutchland" readonly><br>
 
-          <input type="button" onclick="display();" value="info">
+          <input type="submit" id="btn" value="info">
+          <div id="output">
 
+          </div>
         </form>
     </template>
-    <address-field>
+    <address-field >
     </address-field>
   <script src="index.js" defer>
   </script>
