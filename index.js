@@ -10,7 +10,6 @@ class formField extends HTMLElement{
     });
     shadow.appendChild(template.content.cloneNode(true))
     const zipElement = shadow.querySelector('.zip');
-    //console.log(zipElement);
     zipElement.addEventListener('input', (x) => {
       const targetValue = x.target.value;
       if (targetValue == null)
@@ -21,7 +20,7 @@ class formField extends HTMLElement{
         shadow.querySelector('.city').value=table[targetValue];
       }
     })
-  
+
 
     const formElement = shadow.querySelector('#add');
     formElement.addEventListener('submit',(e)=>{
@@ -33,42 +32,7 @@ class formField extends HTMLElement{
     }), {});
     shadow.querySelector('#output').innerHTML = JSON.stringify(data);
   });
-  //  })
-
-
-
-
-    /*
-    const toJSON= elements=>[].reduce.call(elements,(data,element)=> {
-      data[element.name]= element.value;
-      return data;
-    })
-    */
-
-
   }
 }
-/*
-function display(){
-    const form= document.getElementById('city').value;
-    alert(form);
-    return form;
-}
-*/
 
 window.customElements.define('address-field', formField);
-
-
-
-/*
-import {html, render} from 'lit-html';
-
-const template= (name)=>{
-  html`<div> Hello ${name} </div>`;
-}
-const address=()=>{
-  html`<div> <input type="number" name="Zip"> </div>`
-}
-
-render(template('Ke cha keta'), document.body);
-*/
